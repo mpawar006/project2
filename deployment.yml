@@ -14,11 +14,10 @@ spec:
     spec:
       containers:
       - name: con-prod
-        image: k8s-cluster
+        image: localhost:5000/k8s_cluster
+        imagePullPolicy: Never
         ports:
         - containerPort: 80
-      imagePullSecrets:
-      - name: proj2
 
 ---
 apiVersion: v1
