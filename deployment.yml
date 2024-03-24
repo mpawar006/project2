@@ -17,6 +17,8 @@ spec:
         image: k8s-cluster
         ports:
         - containerPort: 80
+      imagePullSecrets:
+      - name: proj2
 
 ---
 apiVersion: v1
