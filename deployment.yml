@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: con-prod
-        image: localhost:5000/k8s_cluster
+        image: localhost:5000/k8s-cluster:latest
         imagePullPolicy: Never
         ports:
         - containerPort: 80
